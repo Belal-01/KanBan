@@ -1,0 +1,86 @@
+.column-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.columnPage{
+  background-color: rgba(201, 189, 189, 0.233);
+  min-height: 33rem;
+  flex: 1 1 30%;
+  max-width: 32rem;
+  padding:10px;
+  border-radius: 10px;
+  border:4px dashed transparent;
+
+}
+.columnPage.drop{
+  border:4px dashed black;
+}
+.columnPage-state{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding:10px 0 15px 0 ;
+}
+.columnPage-state-title{
+  padding:8px 15px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+.PLANING{
+  background-color: rgba(243, 56, 250, 0.61);
+}
+.ONGOING{
+  background-color: #379fdb94;
+}
+.DONE{
+  background-color: #49e234a2;
+}
+.add-new-task-btn{
+  all: unset;
+  display: block;
+  margin:0 auto;
+  border:2px solid rgb(211, 34, 34);
+  padding:7px 25px;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.11);
+  
+}
+.add-new-task-form{
+  background-color: white;
+  min-height:4rem;
+  padding:5px;
+  border-radius: 5px;
+  margin-bottom:10px;
+  position:relative;
+  
+}
+.add-new-task-form button{
+  position:absolute;
+  bottom:8px;
+  right:8px;
+  padding:5px 10px;
+  background-color: rgba(207, 201, 201, 0.24);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.add-new-task-form input{
+  padding:4px 5px;
+  font-weight: 600;
+  
+}
+.add-new-task-form textarea{
+  padding:4px 5px;
+  width:190px;
+  resize: vertical;
+}
+.back-button{
+  color:white;
+  background-color: rgba(207,201, 201, 0.24);
+  padding:5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top:25px;
+  left:35px;
+  cursor: pointer;
+}
