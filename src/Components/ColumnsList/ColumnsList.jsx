@@ -4,7 +4,7 @@ import Column from '../Column/Column'
 
 const ColumnsList = () => {
   return (
-    <div className='columns'>
+  <div className='columns'>
     <Column state = {'PLANING'}/>
     <Column state = {'ONGOING'}/>
     <Column state = {'DONE'}/>

@@ -12,7 +12,6 @@ const store  = (set)=>({
   )},
   delelteTask:(id)=>set((store)=>{
     const newTasks = store.Tasks.filter((task)=>task.id!==id)
-
    return {Tasks:newTasks}}),
   updateTask:(id,state)=>set((store)=>{
     const newTasks = store.Tasks.map((task)=>task.id===id?{...task,state}:task)
@@ -32,10 +31,10 @@ export const useStore = create(persist(devtools(store),{name:'store'}))
 useStore.subscribe((newStore,prevStore)=>{
   if(newStore.Tasks!==prevStore.Tasks){ 
       useStore.setState({
-        onGoingTasks :newStore.Tasks.filter((task)=>task.state==="ONGOING").length
+        onGoingTasks:newStore.Tasks.filter((task)=>task.state==="ONGOING").length
       })
-  console.log(newStore.onGoingTasks)
+  
 }
 })
 
-useStore.subscribe((dragTask)=>console.log(dragTask),(state)=>state.dragTask)
+useStore.subscribe((dragTask)=>console.log(dragTask))
